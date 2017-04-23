@@ -141,7 +141,11 @@ on the dates listed to determine if the cause was seasonal or done by other mean
 acfPlot(failedRequests[,2],lag.max=60)
 ```
 
-  The above plot shows an furthur aggregation to the data of
+Below is a link to the plot in case the one generated is not to your liking.
+
+[Ratio of Failed Server Requests to Successful Requests by Day aggregated further](https://github.com/jsallese/Assignment3/blob/master/Ratio%20of%20Failed%20Server20Requests%20to%20Successful%20Requests%20by%20Day.jpeg)
+
+  The above plot shows an further aggregation to the data of
 the ratio of failed server requests to succsesful requests
 by day.
 
