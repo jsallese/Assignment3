@@ -103,7 +103,7 @@ Security Insights, Patterns, and Anomalies in Big Data
 by  Mark Ryan M. Talabis, Robert McPherson, I. Miyamoto
 and Jason L. Martin
 
-```{r, eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+```{r, message=FALSE, warning=FALSE}
 library(fBasics)
 library(readr)
 failedRequests <- read.csv("~/Desktop/untitled folder/failedrequestsbyday.csv")
@@ -124,6 +124,11 @@ legend("topright",c("Average","2 X Standard
 Deviation"),lty=c(1,2))
 ```
 
+Below is a link to the plot in case the one generated is not to your liking.
+
+[Ratio of Failed Server Requests to Successful Requests by Day](https://github.com/jsallese/Assignment3/blob/master/Ratio%20of%20Failed%20Server%20Requests%20to%20Successful%20Requests%20by%20Day.jpeg)
+
+
   Above is a plot of the ratio of failed server requests to
 succsesful requests by day.It shows the times in which the
 number of requests have exceeded the threshold average.
@@ -134,7 +139,6 @@ on the dates listed to determine if the cause was seasonal or done by other mean
 
 ```{r}
 acfPlot(failedRequests[,2],lag.max=60)
-
 ```
 
   The above plot shows an furthur aggregation to the data of
