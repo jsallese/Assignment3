@@ -23,11 +23,11 @@ the R programming language.
 
 Below is a link to the creation of the tables within hive that help sort the data for analysis.
 
-[Safari Data Table Creation](https://github.com/jsallese/Assignment3/blob/master/screatetable.png)
+**[Safari Data Table Creation](https://github.com/jsallese/Assignment3/blob/master/screatetable.png)**
 
-[Firefox Data Table Creation](https://github.com/jsallese/Assignment3/blob/master/ffoxcreatetable.png)
+**[Firefox Data Table Creation](https://github.com/jsallese/Assignment3/blob/master/ffoxcreatetable.png)**
 
-##Top Hosts in Safari
+#Top Hosts in Safari
 
 ```{r, message=FALSE, warning=FALSE}
 library(readr)
@@ -60,10 +60,10 @@ text(x=ss,
 Above shows a bar plot of the top hosts found when the safari browser accessed gmail.
 Below is a link to an image of hive pulling and sorting the data found above.
 
-[Hive Code Source IP](https://github.com/jsallese/Assignment3/blob/master/source%20safari.png)
+**[Hive Code Source IP](https://github.com/jsallese/Assignment3/blob/master/source%20safari.png)**
 
 
-##Top Hosts in Firefox
+#Top Hosts in Firefox
 
 ```{r, message=FALSE, warning=FALSE}
 library(readr)
@@ -101,9 +101,9 @@ efficiently.
 
 Below is a link to an image of hive pulling and sorting the data found above.
 
-[Hive Code Source IP](https://github.com/jsallese/Assignment3/blob/master/fsource.png)
+**[Hive Code Source IP](https://github.com/jsallese/Assignment3/blob/master/fsource.png)**
 
-##Protocol Use in Safari
+#Protocol Use in Safari
 
 
 ```{r Protocol Use-1, message=FALSE, warning=FALSE}
@@ -136,9 +136,9 @@ above TCP is used the most and TLS is used the second most and ICMPv6 is used th
 
 Below is a link to an image of hive pulling and sorting the data found above.
 
-[Hive Code Protocol Use](https://github.com/jsallese/Assignment3/blob/master/protocol%20safari.png)
+**[Hive Code Protocol Use](https://github.com/jsallese/Assignment3/blob/master/protocol%20safari.png)**
 
-##Protocol Use in Firefox
+#Protocol Use in Firefox
 
 ```{r Protocol Use-2, message=FALSE, warning=FALSE}
 library(readr)
@@ -170,10 +170,10 @@ like in the safar bar graph the TCP and the TLSv1.2 useage are the first and sec
 in both.Comparing the two plots it is interesting to see that firefox has more protocol
 use than safari.
 
-[Hive Code Protocol Use](https://github.com/jsallese/Assignment3/blob/master/protocolfir
-fox.png)
+**[Hive Code Protocol Use](https://github.com/jsallese/Assignment3/blob/master/protocolfir
+fox.png)**
 
-##Transport Layer Security over Time in Firfox
+#Transport Layer Security over Time in Firfox
 
 ```{r Transport Layer Security over Time 1, message=FALSE, warning=FALSE}
 library(readr)
@@ -223,7 +223,7 @@ the safari browser while it is accessing gmail. Comparing the two plots above on
 infer that safari is more secure because it the plot shows that it uses encryption more 
 that firefox for the duration that packets where captured.
 
-##Types of packets in Safari
+#Types of packets in Safari
 
 ```{r, message=FALSE, warning=FALSE}
 
@@ -263,9 +263,9 @@ legend("topright",
 Above shows a bar plot of the packet types used in the safari browser while logging onto
 gmail.
 
-[Hive Packet Type](https://github.com/jsallese/Assignment3/blob/master/sinfo.png)
+**[Hive Packet Type](https://github.com/jsallese/Assignment3/blob/master/sinfo.png)**
 
-##Types of packets in Firefox
+#Types of packets in Firefox
 
 ```{r, message=FALSE, warning=FALSE}
 library(readr)
@@ -306,7 +306,7 @@ packet type from safari and firfox I have come to the conclusion that according 
 data shown in the plots the safari  browser uses less packets overall so therefore as 
 the data has shown the safari browser is overall more efficient that firefox.
 
-[Hive Packet Type](https://github.com/jsallese/Assignment3/blob/master/finfo.png)
+**[Hive Packet Type](https://github.com/jsallese/Assignment3/blob/master/finfo.png)**
 
 Conclusion: Throught the analysis I have learned more about Hive coding in cloudera and 
 R coding in the R language.Within the future the usage of the cloudera VM to help sort dat will be incredibly usefull.
