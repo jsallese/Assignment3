@@ -27,7 +27,7 @@ and passwords from the database. If this where a proffesional report to a compan
 provided would reccomend furthur defenses to be set up so attacks like the SQL injection would not happen again 
 in the future.
 
-[SQL Injection Attack](cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-21-23-12-56.png)
+[SQL Injection Attack](https://github.com/jsallese/Assignment3/blob/master/cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-21-23-12-56.png)
 
 
   Below are the result to the hive query which was checking if there 
@@ -43,7 +43,7 @@ based on the data that is provided would reccomend furthur defenses
 to be implemented to prenent directory traversal and file inclusion 
 attacks
 
-[Directory Traversal and File inclusion](cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-21-23-16-13.png)
+[Directory Traversal and File inclusion](https://github.com/jsallese/Assignment3/blob/master/cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-21-23-16-13.png)
 
   Below are the resluts to the hive query search on a Cross Site Request Forgery which pertains
 to browsers Javascript alert notice. Attacks such as these are one such attack that uses password phishing
@@ -52,50 +52,47 @@ a proffesional report to a company I, based on the data that is provided would r
 to be made that prevents  Cross Site Request Forgery from happening againm which in turn leaves 
 the computer more secure in the long run.
 
-[Cross Site Request Forgery](cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-21-23-23-37.png)
+[Cross Site Request Forgery](https://github.com/jsallese/Assignment3/blob/master/cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-21-23-23-37.png)
 
   Below are the results to the hive query that checks the data on possible command injection 
 attacks. These attacks try to disguise commands with HTML URL encoding. As one can see below 
 there are results shown within the data.
 
-[Command injection](cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-21-23-28-39.png)
+[Command injection](https://github.com/jsallese/Assignment3/blob/master/cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-21-23-28-39.png)
 
   Below are the results to the hive query that checks the data on possible MySQL Charset Switch
 and MS-SQL DoS Attack. This attack involver atlering a character set that is used for 
 functionality of databases and avoiding DDOS attack. As can be seen below there are results 
 where the attacker changed the character set gbk_chinese_ci. 
 
-[MySQL Charset Switch and MS-SQL DoS 
-Attack](cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-21-23-30-20.png)
+[MySQL Charset Switch and MS-SQL DoS Attack](https://github.com/jsallese/Assignment3/blob/master/cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-21-23-30-20.png)
 
   Below are the results to the hive query that checks the data on the most failed requests sent
 to the server. This data would be able to tell us when the most failed requests happen and 
 help us identify the specific host and day which had the most failed access which could 
 likely be an attacker. The host with the most accesses should be investigated in the future
 
-[Hosts with the Most Failed Requests](cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-21-23-47-26.png)
+[Hosts with the Most Failed Requests](https://github.com/jsallese/Assignment3/blob/master/cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-21-23-47-26.png)
 
   Below is the results if the hive query which was searching the access logs for bot activity.
 Below lists the results and the hits in which the bot was found. Possible defenses in the
 future could include verification of access to the apache server. 
 
-[Bot Activity](cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-21-23-53-41.png)
+[Bot Activity](https://github.com/jsallese/Assignment3/blob/master/cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-21-23-53-41.png)
 
   Below are the resultsof the Hosts with the Most Failed Requests per Day and per month. This
 data can tell us what host to investigate undedr the suspicion of more failed requests, which
 can be a sign that the host is an attacker trying to send commands.
 
-[Hosts with the Most Failed Requests per Day ](cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-22-00-00-34.png)
+[Hosts with the Most Failed Requests per Day ](https://github.com/jsallese/Assignment3/blob/master/cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-22-00-00-34.png)
 
-[Hosts with the Most Failed Requests per Month](cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-22-00-02-53.png)
+[Hosts with the Most Failed Requests per Month](https://github.com/jsallese/Assignment3/blob/master/cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-22-00-02-53.png)
 
   Below are the data results from hive where the data has been calculated as a ratio of failed 
 to successful requests as a time series. This data can tell us th yeay and the month where 
 the ratio was the highest. These results can tell us what year that should be analysed more 
 in depth. As shown wihtin the results the year and month with the highest ratio
-[Ratio of Failed to Successful Requests as a Time 
-Series](cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-22-18-37-45.png)
-
+[Ratio of Failed to Successful Requests as a Time Series](https://github.com/jsallese/Assignment3/blob/master/cloudera-quickstart-vm-5.10.0-0-vmware-2017-04-22-18-37-45.png)
 
 
 ##R Code of the Ratio of Failed to Successful Requests as a Time Series
@@ -106,12 +103,10 @@ Security Insights, Patterns, and Anomalies in Big Data
 by  Mark Ryan M. Talabis, Robert McPherson, I. Miyamoto
 and Jason L. Martin
 
-```{r}
-rm(list=ls()) 
-
+```{r, eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 library(fBasics)
-
-failedRequests <- read.csv("failedRequestsByDay.csv")
+library(readr)
+failedRequests <- read.csv("~/Desktop/untitled folder/failedrequestsbyday.csv")
 
 colnames(failedRequests) <- c("Date","FailedRequestsRatio")
 stdev <- sd(failedRequests$FailedRequestsRatio) 
